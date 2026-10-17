@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Academic Dashboard - Lab 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER WITH LAB 2 BADGE -->
+    <header class="header">
+        <div class="lab-badge">Lab 2</div>
+        <h1>Professional Academic Dashboard</h1>
+        <p>WebGIS Development</p>
+    </header>
+
+
+    <!-- DASHBOARD 3-COLUMN LAYOUT -->
+    <main class="dashboard">
+
+        <!-- LEFT PANEL: CONTACT -->
+        <section class="card contact-section">
+
+            <h2>Contact</h2>
+
+            <p>You can contact me using the options below.</p>
+
+            <button class="contact-button" onclick="showEmail()">
+                📧 Email
+            </button>
+
+            <button class="contact-button" onclick="showPhone()">
+                📞 Phone Number
+            </button>
+
+            <button class="contact-button" onclick="showMoreInfo()">
+                ℹ️ More Info
+            </button>
+
+        </section>
+
+
+        <!-- CENTER PANEL: ACADEMIC PROFILE -->
+        <section class="card profile-section">
+
+            <h2>Academic Profile</h2>
+
+            <h3>Aiman Maqsood</h3>
+
+            <p class="designation">
+                GIS & Remote Sensing Student
+            </p>
+
+            <p class="university">
+                PMAS-Arid Agriculture University Rawalpindi
+            </p>
+
+            <div class="profile-description">
+
+                <h3>Professional Profile</h3>
+
+                <p>
+                    I am an undergraduate student specializing in Geographic Information
+                    Systems and Remote Sensing. My academic focus centers on geospatial data 
+                    analysis, multi-criteria spatial modeling, digital cartography, and satellite 
+                    imagery processing. I have practical experience in desktop GIS applications, 
+                    Google Earth Engine scripting, and raster satellite analysis. My research interests 
+                    include environmental hazard mapping, disease risk distribution, and road network 
+                    routing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT PANEL: INSTITUTE OVERVIEW -->
+        <section class="card institute-section">
+
+            <h2>Institute</h2>
+
+            <h3>
+                Institute of Geo Information and Earth Observation
+            </h3>
+
+            <p>
+                The Institute of Geo Information and Earth Observation
+                provides a high-level academic environment for learning and research
+                in Geographic Information Systems, Remote Sensing,
+                geospatial information, and Earth observation techniques.
+            </p>
+
+            <p>
+                The institute encourages students to develop practical
+                knowledge and skills in spatial data analysis, digital
+                mapping, remote sensing, and modern interactive geospatial technologies.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- POPUP MODAL -->
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close-button" onclick="closePopup()">
+                &times;
+            </span>
+
+            <h2 id="popup-title">
+                Information
+            </h2>
+
+            <div id="popup-message">
+                Information
+            </div>
+
+            <button 
+                class="close-button-bottom" 
+                onclick="closePopup()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
